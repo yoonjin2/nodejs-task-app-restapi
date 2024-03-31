@@ -7,7 +7,7 @@ const taskRouter = require('./router/task.router');
 const app = express();
 
 app.use(express.json());
-const port = process.env.PORT;
+const port = process.env.PORT_SHOP_RESTAPI;
 
 app.use(express.static('public'));
 app.use('/api-docs', (req, res) => {
